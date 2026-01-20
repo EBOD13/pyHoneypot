@@ -32,7 +32,7 @@ It accepts SSH connections, logs attempted credentials and commands, and present
 
 - Python 3.8+
 - `paramiko`
-
+- Create a server.key.pub (rsa)
 Install dependency:
 
 ```bash

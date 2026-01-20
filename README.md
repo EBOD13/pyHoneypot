@@ -33,22 +33,10 @@ It accepts SSH connections, logs attempted credentials and commands, and present
 - Python 3.8+
 - `paramiko`
 
-### Generate an SSH RSA key pair
+### Generate a new RSA key with NO passphrase, in PEM format (Paramiko-friendly)
+ssh-keygen -t rsa -b 4096 -m PEM -f server.key -N ""
 
-Run this:
-
-ssh-keygen -t rsa -b 4096 -f server.key
-
-This produces:
-
-server.key        → your SSH private key
-server.key.pub    → your SSH public key (what will be used for the project)
-
-The output will look like:
-Generating public/private rsa key pair.
-Enter passphrase (empty for no passphrase):
-
-Install dependency:
+### Install dependency:
 
 ```bash
 python -m pip install paramiko

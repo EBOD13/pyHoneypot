@@ -43,25 +43,6 @@ python -m pip install paramiko
 
 ```
 
-## Run
-```bash
-python3 ssh_honeypot.py 
-```
-if usiny Python 3
-
-OR
-
-```bash
-python ssh_honeypot.py 
-```
-
-Absolutely — below is a **clean, drop-in Markdown section** you can paste directly into your `README.md`.
-It integrates **how to use the honeypot**, **step-by-step instructions**, and **real command examples**, written in a professional, README-ready style.
-
-You can paste this **as-is** under your existing content.
-
----
-
 ## Usage
 
 The SSH honeypot runs as a fake SSH server.  

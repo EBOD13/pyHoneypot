@@ -32,8 +32,37 @@ It accepts SSH connections, logs attempted credentials and commands, and present
 
 - Python 3.8+
 - `paramiko`
-- Create a server.key.pub (rsa)
+
+### Generate an SSH RSA key pair
+
+Run this:
+
+ssh-keygen -t rsa -b 4096 -f server.key
+
+This produces:
+
+server.key        → your SSH private key
+server.key.pub    → your SSH public key (what will be used for the project)
+
+The output will look like:
+Generating public/private rsa key pair.
+Enter passphrase (empty for no passphrase):
+
 Install dependency:
 
 ```bash
 python -m pip install paramiko
+
+```
+
+## Run
+```bash
+python3 ssh_honeypot.py 
+```
+if usiny Python 3
+
+OR
+
+```bash
+python ssh_honeypot.py 
+```

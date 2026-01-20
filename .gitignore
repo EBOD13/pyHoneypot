@@ -1,7 +1,16 @@
-server.key
+# SSH Keys
+*.key
+*.pem
+*.pub
+
+# Environment variables
+.env
+
+# Python cache
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-.env
+
+# Security & secrets
 security/
